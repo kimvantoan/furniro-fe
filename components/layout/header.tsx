@@ -12,10 +12,9 @@ import {
 import { Badge } from "@/components/ui/badge";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Shop", href: "/shop" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Trang chủ", href: "/" },
+  { label: "Cửa hàng", href: "/shop" },
+  { label: "Liên hệ", href: "/contact" },
 ];
 
 export default function Header() {
