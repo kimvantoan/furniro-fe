@@ -27,23 +27,15 @@ export default function Hero() {
           <p
             className="text-xs tracking-[0.18em] text-neutral-500 mb-3 uppercase"
           >
-            New Arrival
+            SẢN PHẨM MỚI
           </p>
 
           {/* Heading */}
           <h1
             className="text-[2.25rem] sm:text-[2.5rem] font-extrabold leading-[1.15] text-primary mb-5"
           >
-            Discover Our
-            <br />
-            New Collection
+            Khám phá bộ sưu tập của chúng tôi
           </h1>
-
-          {/* Description */}
-          <p className="text-sm text-neutral-600 leading-relaxed mb-8 max-w-[340px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis.
-          </p>
 
           {/* CTA Button */}
           <Link href="/shop">
@@ -55,7 +47,7 @@ export default function Hero() {
                 hover:-translate-y-0.5
               "
             >
-              Buy Now
+              Mua ngay
             </Button>
           </Link>
         </div>

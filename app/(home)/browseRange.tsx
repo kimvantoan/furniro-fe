@@ -4,21 +4,21 @@ import Link from "next/link";
 const ranges = [
   {
     id: 1,
-    label: "Dining",
+    label: "Phòng bếp",
     href: "/shop?category=dining",
     src: "/range/dining.png",
     alt: "Dining room furniture",
   },
   {
     id: 2,
-    label: "Living",
+    label: "Phòng khách",
     href: "/shop?category=living",
     src: "/range/living.png",
     alt: "Living room furniture",
   },
   {
     id: 3,
-    label: "Bedroom",
+    label: "Phòng ngủ",
     href: "/shop?category=bedroom",
     src: "/range/bedroom.png",
     alt: "Bedroom furniture",
@@ -31,20 +31,19 @@ export default function BrowseRange() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-10">
-          <h2
-            className="text-2xl sm:text-3xl font-extrabold text-neutral-900 mb-2"
-          >
-            Browse The Range
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 mb-2">
+            Xem ngay các sản phẩm
           </h2>
-          <p className="text-sm text-neutral-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
         </div>
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {ranges.map((item) => (
-            <Link key={item.id} href={item.href} className="group flex flex-col items-center gap-3">
+            <Link
+              key={item.id}
+              href={item.href}
+              className="group flex flex-col items-center gap-3"
+            >
               {/* Image */}
               <div className="relative w-full aspect-[3/4] overflow-hidden rounded-lg">
                 <Image
@@ -56,9 +55,7 @@ export default function BrowseRange() {
                 />
               </div>
               {/* Label */}
-              <span
-                className="text-base font-semibold text-neutral-800 group-hover:text-primary transition-colors duration-200"
-              >
+              <span className="text-base font-semibold text-neutral-800 group-hover:text-primary transition-colors duration-200">
                 {item.label}
               </span>
             </Link>

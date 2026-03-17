@@ -4,11 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Search, Heart, ShoppingCart, UserCircle2, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Badge } from "@/components/ui/badge";
 
 const navLinks = [
@@ -26,9 +22,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
           <FurniroLogo />
-          <span
-            className="text-[1.45rem] font-extrabold tracking-tight text-neutral-900"
-          >
+          <span className="text-[1.45rem] font-extrabold tracking-tight text-neutral-900">
             Furniro
           </span>
         </Link>
@@ -40,7 +34,7 @@ export default function Header() {
               <Link
                 href={link.href}
                 onClick={() => setActiveLink(link.label)}
-                className={`relative text-sm font-medium transition-colors duration-200 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-primary after:transition-all after:duration-300 hover:text-primary hover:after:w-full ${
+                className={`relative font-medium transition-colors duration-200 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-primary after:transition-all after:duration-300 hover:text-primary hover:after:w-full ${
                   activeLink === link.label
                     ? "text-neutral-900 after:w-full"
                     : "text-neutral-600"
@@ -54,25 +48,36 @@ export default function Header() {
 
         {/* Action Icons */}
         <div className="flex items-center gap-1">
-          <NavIconButton icon={<UserCircle2 size={20} />} label="Account" href="/account" badge={1} />
-          <NavIconButton icon={<Search size={20} />} label="Search" href="/search" />
-          <NavIconButton icon={<Heart size={20} />} label="Wishlist" href="/wishlist" />
-          <NavIconButton icon={<ShoppingCart size={20} />} label="Cart" href="/cart" />
+          <NavIconButton
+            icon={<UserCircle2 />}
+            label="Account"
+            href="/account"
+          />
+          <NavIconButton icon={<Search />} label="Search" href="/search" />
+          <NavIconButton icon={<Heart />} label="Wishlist" href="/wishlist" />
+          <NavIconButton
+            icon={<ShoppingCart />}
+            label="Cart"
+            href="/cart"
+            badge={1}
+          />
 
           {/* Mobile Menu */}
           <div className="md:hidden ml-1">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-neutral-600 hover:text-primary">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-neutral-600 hover:text-primary"
+                >
                   <Menu size={20} />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-72 pt-10">
                 <div className="flex items-center gap-2.5 mb-8">
                   <FurniroLogo />
-                  <span
-                    className="text-xl font-extrabold text-neutral-900"
-                  >
+                  <span className="text-xl font-extrabold text-neutral-900">
                     Furniro
                   </span>
                 </div>
@@ -129,14 +134,11 @@ function NavIconButton({
     <Link href={href} aria-label={label}>
       <Button
         variant="ghost"
-        size="icon"
         className="relative hidden md:inline-flex text-neutral-600 hover:text-primary hover:bg-amber-50 transition-colors"
       >
         {icon}
         {badge != null && badge > 0 && (
-          <Badge
-            className="absolute -top-1 -right-1 h-4 w-4 p-0 flex items-center justify-center text-[10px] bg-primary text-white border-0 rounded-full"
-          >
+          <Badge className="absolute -top-1 -right-1 h-4 w-4 p-0 flex items-center justify-center text-[10px] bg-primary text-white border-0 rounded-full">
             {badge}
           </Badge>
         )}

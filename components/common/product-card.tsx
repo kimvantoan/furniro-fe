@@ -7,12 +7,13 @@ import { ArrowLeftRight, Heart, Share2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { formatPrice } from "@/utils/formatPrice";
 import { Product } from "@/types/product";
+import Link from "next/link";
 
 export default function ProductCard({ product }: { product: Product }) {
   const [liked, setLiked] = useState(false);
 
   return (
-    <div className="group relative bg-[#F4F5F7] overflow-hidden flex flex-col">
+    <Link href={`/product/${product.slug}`} className="group relative bg-[#F4F5F7] overflow-hidden flex flex-col">
       {/* Image wrapper */}
       <div className="relative w-full aspect-square overflow-hidden">
         <Image
@@ -86,6 +87,6 @@ export default function ProductCard({ product }: { product: Product }) {
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

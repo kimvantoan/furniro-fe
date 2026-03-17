@@ -5,6 +5,7 @@ import { ProductDetail } from "@/types/product";
 import ProductInfo from "./product-info";
 import ProductOption from "./product-option";
 import ProductDescription from "./ProductDescription";
+import { ShoppingBag } from "lucide-react";
 
 const defaultProduct: ProductDetail = {
   id: 1,
@@ -38,7 +39,7 @@ export default function ProductDetailSection({
   return (
     <>
       <Breadcrumb
-        items={[{ label: "Home", href: "/" }, { label: product.name }]}
+        items={[{ label: "Trang chủ", href: "/" }, { label: product.name }]}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col lg:flex-row gap-10">
@@ -52,7 +53,7 @@ export default function ProductDetailSection({
             {/* Size */}
             <ProductOption product={product} />
 
-            <Button className="px-8 py-6">Add To Cart</Button>
+            <Button className="px-8 py-6"><ShoppingBag /> Thêm giỏ hàng</Button>
           </div>
         </div>
       </div>

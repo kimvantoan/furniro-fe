@@ -24,7 +24,7 @@ export function BillingForm() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-6">
-                Billing details
+                Thông tin người nhận
               </h1>
             </div>
 
@@ -66,7 +66,7 @@ export function BillingForm() {
         <div className="lg:col-span-1">
           <Card className="sticky top-8">
             <CardHeader className="border-b">
-              <CardTitle className="text-xl">Your Order</CardTitle>
+              <CardTitle className="text-xl">Đơn hàng</CardTitle>
             </CardHeader>
             <CardContent className="pt-6 space-y-6">
               {/* Product Summary */}
@@ -102,12 +102,12 @@ export function BillingForm() {
 
               {/* Payment Methods */}
               <div className="space-y-4 pt-4 border-t">
-                <h3 className="font-medium text-gray-900">Payment Method</h3>
+                <h3 className="font-medium text-gray-900">Phương thúc thanh toán</h3>
                 <RadioGroup
                   value={paymentMethod}
                   onValueChange={setPaymentMethod}
                 >
-                  <div className="flex items-start space-x-3 p-3 rounded-lg border border-gray-200 hover:border-gray-300 cursor-pointer">
+                  {/* <div className="flex items-start space-x-3 p-3 rounded-lg border border-gray-200 hover:border-gray-300 cursor-pointer">
                     <RadioGroupItem
                       value="bank-transfer"
                       id="bank-transfer"
@@ -125,7 +125,7 @@ export function BillingForm() {
                         use your Order ID as the payment reference.
                       </p>
                     </label>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start space-x-3 p-3 rounded-lg border border-gray-200 hover:border-gray-300 cursor-pointer">
                     <RadioGroupItem
@@ -138,7 +138,7 @@ export function BillingForm() {
                       className="flex-1 cursor-pointer"
                     >
                       <p className="font-medium text-gray-900">
-                        Cash on Delivery
+                        Thanh toán khi nhận hàng
                       </p>
                     </label>
                   </div>

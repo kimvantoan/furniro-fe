@@ -5,17 +5,14 @@ import { Button } from "@/components/ui/button";
 import ProductCard from "@/components/common/product-card";
 import { products } from "@/data/productData";
 
-
 export default function OurProducts() {
   const [showAll, setShowAll] = useState(false);
   return (
-    <section >
+    <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <h2
-          className="text-2xl sm:text-3xl font-extrabold text-neutral-900 text-center mb-10"
-        >
-          Our Products
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 text-center mb-10">
+          Sản phẩm của chúng tôi
         </h2>
 
         {/* Grid */}

@@ -29,7 +29,7 @@ export default function ProductDescription() {
       <Tabs defaultValue="description" className="w-full">
         {/* Tab Navigation */}
         <TabsList className="w-full bg-transparent border-b border-stone-200 rounded-none h-auto p-0 mb-10 justify-start gap-8">
-          {["description", "additional", "reviews"].map((tab) => (
+          {["description", "reviews"].map((tab) => (
             <TabsTrigger
               key={tab}
               value={tab}
@@ -39,11 +39,10 @@ export default function ProductDescription() {
                 "transition-colors duration-200 hover:text-stone-600"
               )}
             >
-              {tab === "description" && "Description"}
-              {tab === "additional" && "Additional Information"}
+              {tab === "description" && "Thông tin chi tiết"}
               {tab === "reviews" && (
                 <span className="flex items-center gap-2">
-                  Reviews
+                  Đánh giá
                   <Badge className="bg-stone-900 text-white text-xs px-2 py-0.5 rounded-full font-light">
                     5
                   </Badge>
@@ -117,7 +116,7 @@ export default function ProductDescription() {
         </TabsContent>
 
         {/* Additional Information Tab */}
-        <TabsContent value="additional" className="mt-0">
+        {/* <TabsContent value="additional" className="mt-0">
           <div className="space-y-6">
             {[
               { label: "Weight", value: "Under 7 lbs" },
@@ -139,7 +138,7 @@ export default function ProductDescription() {
               </div>
             ))}
           </div>
-        </TabsContent>
+        </TabsContent> */}
 
         {/* Reviews Tab */}
         <TabsContent value="reviews" className="mt-0">

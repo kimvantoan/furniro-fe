@@ -13,7 +13,7 @@ const ProductOption = ({ product }: { product: ProductDetail }) => {
   return (
     <>
       <div className="flex flex-col gap-2 mt-1">
-        <span className="text-sm text-neutral-400">Size</span>
+        <span className="text-sm text-neutral-400">Kích thước</span>
         <div className="flex items-center gap-3">
           {product.sizes.map((size) => (
             <button
@@ -34,7 +34,7 @@ const ProductOption = ({ product }: { product: ProductDetail }) => {
 
       {/* Color */}
       <div className="flex flex-col gap-2">
-        <span className="text-sm text-neutral-400">Color</span>
+        <span className="text-sm text-neutral-400">Màu sắc</span>
         <div className="flex items-center gap-3">
           {product.colors.map((color) => (
             <button
@@ -55,7 +55,7 @@ const ProductOption = ({ product }: { product: ProductDetail }) => {
       {/* Quantity */}
       <div className="flex flex-col gap-2">
         {/* Quantity */}
-        <span className="text-sm text-neutral-400">Quantity</span>
+        <span className="text-sm text-neutral-400">Số lượng</span>
         <div className="flex items-center border border-neutral-300 rounded-lg w-fit">
           <Button
             variant={"ghost"}

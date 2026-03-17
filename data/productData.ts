@@ -10,6 +10,7 @@ export const products: Product[] = [
     discountPercent: 30,
     badge: "discount",
     image: "/images/products/product-1.jpg",
+    slug: "syltherine",
   },
   {
     id: 2,
@@ -17,6 +18,8 @@ export const products: Product[] = [
     description: "Stylish cafe chair",
     price: 2500000,
     image: "/images/products/product-2.jpg",
+    slug: "syltherine",
+
   },
   {
     id: 3,
@@ -27,6 +30,8 @@ export const products: Product[] = [
     discountPercent: 50,
     badge: "discount",
     image: "/images/products/product-3.jpg",
+    slug: "syltherine",
+
   },
   {
     id: 4,
@@ -35,6 +40,8 @@ export const products: Product[] = [
     price: 500000,
     badge: "new",
     image: "/images/products/product-4.jpg",
+    slug: "syltherine",
+
   },
   {
     id: 5,
@@ -42,6 +49,8 @@ export const products: Product[] = [
     description: "Night lamp",
     price: 1500000,
     image: "/images/products/product-5.jpg",
+    slug: "syltherine",
+
   },
   {
     id: 6,
@@ -50,6 +59,8 @@ export const products: Product[] = [
     price: 150000,
     badge: "new",
     image: "/images/products/product-6.jpg",
+    slug: "syltherine",
+
   },
   {
     id: 7,
@@ -60,6 +71,8 @@ export const products: Product[] = [
     discountPercent: 30,
     badge: "discount",
     image: "/images/products/product-7.jpg",
+    slug: "syltherine",
+
   },
   {
     id: 8,
@@ -68,5 +81,7 @@ export const products: Product[] = [
     price: 500000,
     badge: "new",
     image: "/images/products/product-8.jpg",
+    slug: "syltherine",
+
   },
 ];

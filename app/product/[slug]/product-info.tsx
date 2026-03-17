@@ -19,7 +19,7 @@ const ProductInfo = ({ product }: { product: ProductDetail }) => {
         <StarRating rating={product.rating} />
         <span className="w-px h-4 bg-neutral-300" />
         <span className="text-sm text-neutral-500">
-          {product.reviewCount} Customer Review
+          {product.reviewCount} đánh giá
         </span>
       </div>
 
@@ -31,7 +31,7 @@ const ProductInfo = ({ product }: { product: ProductDetail }) => {
       <div className="flex flex-col gap-2 text-sm">
         {[
           { label: "SKU", value: product.sku },
-          { label: "Category", value: product.category },
+          { label: "Danh mục", value: product.category },
         ].map(({ label, value }) => (
           <div key={label} className="flex items-start gap-6">
             <span className="text-neutral-400 w-20 shrink-0">{label}</span>

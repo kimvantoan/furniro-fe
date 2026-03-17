@@ -5,7 +5,7 @@ export default function CheckoutPage() {
   return (
     <div className="space-y-8 mb-8">
       <Breadcrumb
-        items={[{ label: "Home", href: "/" }, { label: "Checkout" }]}
+        items={[{ label: "Trang chủ", href: "/" },{ label: "Giỏ hàng", href: "/cart" }, { label: "Thanh toán" }]}
       />
       <BillingForm />
     </div>

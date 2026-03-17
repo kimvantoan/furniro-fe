@@ -4,23 +4,23 @@ const FeatureBanner = () => {
   const features = [
     {
       icon: Trophy,
-      title: "High Quality",
-      subtitle: "crafted from top materials",
+      title: "Chất lượng cao",
+      subtitle: "Chế tác từ vật liệu cao cấp.",
     },
     {
       icon: ShieldCheck,
-      title: "Warranty Protection",
-      subtitle: "Over 2 years",
+      title: "Bảo hành",
+      subtitle: "Trên 2 năm",
     },
     {
       icon: PackageCheck,
-      title: "Free Shipping",
-      subtitle: "Order over 150 $",
+      title: "Miễn phí vận chuyển",
+      subtitle: "Trên 2 triệu đồng",
     },
     {
       icon: Headphones,
-      title: "24 / 7 Support",
-      subtitle: "Dedicated support",
+      title: "Hỗ trợ 24 / 7",
+      subtitle: "Hỗ trợ chuyên dụng",
     },
   ];
   return (

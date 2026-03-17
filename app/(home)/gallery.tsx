@@ -38,11 +38,6 @@ export default function Gallery() {
     <section className="w-full">
       {/* Header */}
       <div className="text-center mb-10">
-        <p
-          className="text-sm text-neutral-500 mb-1"
-        >
-          Share your setup with
-        </p>
         <h2
           className="text-3xl sm:text-4xl font-extrabold text-neutral-900"
         >

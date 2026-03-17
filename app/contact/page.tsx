@@ -5,18 +5,18 @@ import ContactForm from "./contact-form";
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Address",
+    title: "Địa chỉ",
     lines: ["236 5th SE Avenue, New", "York NY10000, United", "States"],
   },
   {
     icon: Phone,
-    title: "Phone",
+    title: "Số điện thoại",
     lines: ["Mobile: +(84) 546-6789", "Hotline: +(84) 456-6789"],
   },
   {
     icon: Clock,
-    title: "Working Time",
-    lines: ["Monday-Friday: 9:00 - 22:00", "Saturday-Sunday: 9:00 - 21:00"],
+    title: "Thời gian",
+    lines: ["Thứ 2 - Thứ 6: 9:00 - 22:00", "Thứ 7 - Chủ nhật: 9:00 - 21:00"],
   },
 ];
 
@@ -24,18 +24,18 @@ export default function ContactPage() {
   return (
     <>
       <Breadcrumb
-        items={[{ label: "Home", href: "/" }, { label: "Contact" }]}
+        items={[{ label: "Trang chủ", href: "/" }, { label: "Liên hệ" }]}
       />
       <section className="w-full max-w-4xl mx-auto px-6 py-16 ">
         {/* Header */}
         <div className="text-center mb-14">
           <h2 className="text-3xl font-bold text-stone-900 tracking-wide mb-3">
-            Get In Touch With Us
+            Liên hệ với chúng tôi
           </h2>
           <p className="text-stone-400 text-sm leading-relaxed max-w-sm mx-auto">
-            For More Information About Our Product &amp; Services. Please Feel
-            Free To Drop Us An Email. Our Staff Always Be There To Help You Out.
-            Do Not Hesitate!
+            Để biết thêm thông tin về sản phẩm và dịch vụ của chúng tôi, vui
+            lòng gửi email cho chúng tôi. Nhân viên của chúng tôi luôn sẵn sàng
+            hỗ trợ bạn. Đừng ngần ngại!
           </p>
         </div>
 

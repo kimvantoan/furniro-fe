@@ -23,11 +23,11 @@ const ContactForm = () => {
     <div className="flex-1 space-y-6">
       <div>
         <label className="block text-stone-800 font-semibold text-sm mb-2">
-          Your name
+          Họ tên
         </label>
         <Input
           name="name"
-          placeholder="Abc"
+          placeholder="Nguyễn Văn A"
           value={form.name}
           onChange={handleChange}
           className="rounded-md border-stone-300 placeholder:text-stone-300 focus-visible:ring-primary text-sm py-5"
@@ -36,7 +36,7 @@ const ContactForm = () => {
 
       <div>
         <label className="block text-stone-800 font-semibold text-sm mb-2">
-          Email address
+          Email
         </label>
         <Input
           name="email"
@@ -50,11 +50,11 @@ const ContactForm = () => {
 
       <div>
         <label className="block text-stone-800 font-semibold text-sm mb-2">
-          Subject
+          Tiêu đề
         </label>
         <Input
           name="subject"
-          placeholder="This is an optional"
+          placeholder="Tư vấn nội thất"
           value={form.subject}
           onChange={handleChange}
           className="rounded-md border-stone-300 placeholder:text-stone-300 focus-visible:ring-[#b88e2f] text-sm py-5"
@@ -63,11 +63,11 @@ const ContactForm = () => {
 
       <div>
         <label className="block text-stone-800 font-semibold text-sm mb-2">
-          Message
+          Nội dung
         </label>
         <Textarea
           name="message"
-          placeholder="Hi! I'd like to ask about"
+          placeholder="Nội dung tư vấn"
           value={form.message}
           onChange={handleChange}
           rows={5}
@@ -79,7 +79,7 @@ const ContactForm = () => {
         onClick={handleSubmit}
         className="bg-[#b88e2f] hover:bg-[#9a7528] text-white px-10 py-5 rounded-md text-sm font-semibold tracking-wide transition-colors duration-200"
       >
-        Submit
+        Gửi
       </Button>
     </div>
   );

@@ -7,6 +7,7 @@ export type Product = {
   discountPercent?: number;
   badge?: "new" | "discount";
   image: string;
+  slug: string;
 };
 
 export type ProductDetail = {

@@ -3,12 +3,12 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import ProductCard from "@/components/common/product-card";
-import { products } from "@/data/productData";
+import { Product } from "@/types/product";
 
 const ITEMS_PER_PAGE = 16;
 const TOTAL_PAGES = 3;
 
-export default function ProductGrid() {
+export default function ProductGrid({products} : {products: Product[]}) {
   const [currentPage, setCurrentPage] = useState(1);
 
   const start = (currentPage - 1) * ITEMS_PER_PAGE;

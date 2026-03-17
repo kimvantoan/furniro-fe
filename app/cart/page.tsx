@@ -25,7 +25,7 @@ export default function CartSection() {
 
   return (
     <div>
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Cart" }]} />
+      <Breadcrumb items={[{ label: "Trang chủ", href: "/" }, { label: "Giỏ hàng" }]} />
       {/* Cart Section */}
       <section className="w-full max-w-6xl mx-auto px-6 py-14">
         <div className="flex flex-col lg:flex-row gap-8 items-start">
@@ -33,7 +33,7 @@ export default function CartSection() {
           <div className="flex-1 w-full">
             {/* Table Header */}
             <div className="grid grid-cols-[2fr_1fr_1fr_1fr_auto] bg-[#f9f1e7] px-6 py-4 mb-4">
-              {["Product", "Price", "Quantity", "Subtotal", ""].map((h, i) => (
+              {["Sản phẩm", "Giá", "Số lượng", "Thành tiền", ""].map((h, i) => (
                 <span
                   key={i}
                   className="text-stone-800 font-semibold text-sm tracking-wide"
